@@ -52,16 +52,6 @@ public class BaseClass {
 		return driver;
 	}
 	
-	// google chrome extension definition
-	/*
-	 * public static ChromeDriver getChromeDriver(){
-		ChromeOptions options=new ChromeOptions();
-		options.addExtensions(new File("/path/to/extension.crx"));
-		ChromeDriver chromedriver=new ChromeDriver(options);
-		return chromedriver;
-	}
-	 */
-	
 	public static WebDriver getDriver() {
 		return driver;
 	}
