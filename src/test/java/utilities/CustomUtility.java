@@ -2,19 +2,24 @@ package utilities;
 
 import java.time.Duration;
 
+import org.openqa.selenium.By;
+import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebDriverException;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.Select;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
-public class CustomUtility {
-	static WebDriver driver; 
-	static WebDriverWait wait;
-	
-	public static void visibilityOfElement(WebElement elem) {
-		wait = new WebDriverWait(driver, Duration.ofSeconds(20));
-		wait.until(ExpectedConditions.visibilityOf(elem));
+import testBase.BaseClass;
+
+public class CustomUtility extends BaseClass{
+
+	public static WebDriverWait waitForDuration(){
+		return new WebDriverWait(driver, Duration.ofSeconds(10));
+	}
+	public void visibilityOfElement(WebElement elem) {
+		waitForDuration().until(ExpectedConditions.visibilityOf(elem));
 	}
 
 	public static void selectRadioOption(WebElement elem){
@@ -58,4 +63,25 @@ public class CustomUtility {
 		}
 		
 	}
+
+	public static void elementToBeClickable(WebElement elem){
+		try{
+			waitForDuration().until(ExpectedConditions.elementToBeClickable(elem)).click();
+		}catch (Exception e) {
+			System.out.println(e.getMessage());
+		}
+		
+	}
+
+	public static void sendkeys(WebElement elem, String string){
+		elem.clear();
+		elem.sendKeys(string);
+	}
+
+	public static void scrollToElementAndClick(WebElement elem){
+		JavascriptExecutor js = (JavascriptExecutor) getDriver();
+		js.executeScript("arguments[0].scrollIntoView(true);", elem);
+		elem.click();
+	}
+
 }
