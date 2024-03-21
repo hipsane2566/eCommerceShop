@@ -31,12 +31,14 @@ public class BaseClass {
 					ChromeOptions options = new ChromeOptions();
 					//Add Adblocker extension to Chrome 
 					options.addExtensions(new File("./src/test/resources/Adblock-all-advertisement-No-Ads-extension.crx"));
-					DesiredCapabilities capabilities = new DesiredCapabilities();
+					options.addArguments("--disable-popup-blocking");
+					options.addArguments("disable-infobars");
+					// DesiredCapabilities capabilities = new DesiredCapabilities();
 					//Using Chrome Options with Desired Capabilities Class
-					capabilities.setCapability(ChromeOptions.CAPABILITY, options);
-					capabilities.setPlatform(Platform.WIN11);
-					capabilities.setBrowserName("chrome");
-					options.merge(capabilities);
+					// capabilities.setCapability(ChromeOptions.CAPABILITY, options);
+					// capabilities.setPlatform(Platform.WIN11);
+					// capabilities.setBrowserName("chrome");
+					// options.merge(capabilities);
 					driver = new ChromeDriver(options);
 					break;
 				case "edge":

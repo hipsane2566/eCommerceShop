@@ -1,0 +1,44 @@
+16:43:52.017 [main] INFO  testBase.BaseClass - ********** Test Case 01 is Started **********
+16:43:52.021 [main] INFO  testBase.BaseClass - ********** Verify that home page is visible successfully? **********
+16:43:52.040 [main] INFO  testBase.BaseClass - ********** Home page is visible **********
+16:43:52.597 [main] INFO  testBase.BaseClass - ********** Clicked on Singup / Login button **********
+16:43:52.659 [main] INFO  testBase.BaseClass - ********** Verify New User Signup! text is visible? **********
+16:43:52.660 [main] INFO  testBase.BaseClass - ********** New user singup text message is visible **********
+16:43:52.919 [main] INFO  testBase.BaseClass - ********** Username is entered **********
+16:43:53.849 [main] INFO  testBase.BaseClass - ********** Clicked on Singup button **********
+16:43:53.891 [main] INFO  testBase.BaseClass - ********** Verify Enter Account information text is visible? **********
+16:43:53.891 [main] INFO  testBase.BaseClass - ********** Enter Account Information text message is visible **********
+16:43:54.755 [main] INFO  testBase.BaseClass - ********** Given details such as 'Title', 'Name', 'Email', 'Password', 'DateOfBirth' is filled up **********
+16:43:54.882 [main] INFO  testBase.BaseClass - ********** Clicked on singup for our newsletter checkbox **********
+16:43:55.015 [main] INFO  testBase.BaseClass - ********** Clicked on receive special offers checkbox **********
+16:43:56.500 [main] INFO  testBase.BaseClass - ********** Given details are filled up successfully, First name, Last name, Company, Address, Address2, Country, State, City, Zipcode, Mobile Number **********
+16:43:58.079 [main] INFO  testBase.BaseClass - ********** Clicked on create account button **********
+16:43:58.111 [main] INFO  testBase.BaseClass - ********** Verify account created text message is visible**********
+16:43:58.111 [main] INFO  testBase.BaseClass - ********** Account is successfully created **********
+16:44:01.550 [main] INFO  testBase.BaseClass - ********** Clicked on continue button **********
+16:44:01.578 [main] INFO  testBase.BaseClass - ********** Verify that logged in as username is visible **********
+16:44:01.578 [main] INFO  testBase.BaseClass - ********** User get logged in successfullly and username is visible **********
+16:44:02.016 [main] INFO  testBase.BaseClass - ********** Clicked on delete account button **********
+16:44:02.060 [main] INFO  testBase.BaseClass - ********** Verify that account deleted test message is visible **********
+16:44:02.060 [main] INFO  testBase.BaseClass - ********** Account is successfully deleted **********
+16:45:12.592 [main] INFO  testBase.BaseClass - ********** Clicked on continue button **********
+16:54:33.001 [main] INFO  testBase.BaseClass - ********** Test Case 01 is Started **********
+16:54:33.017 [main] INFO  testBase.BaseClass - ********** Verify that home page is visible successfully? **********
+16:54:33.032 [main] INFO  testBase.BaseClass - ********** Home page is visible **********
+16:54:34.345 [main] INFO  testBase.BaseClass - ********** Clicked on Singup / Login button **********
+16:54:34.478 [main] INFO  testBase.BaseClass - ********** Verify New User Signup! text is visible? **********
+16:54:34.478 [main] INFO  testBase.BaseClass - ********** New user singup text message is visible **********
+16:54:34.863 [main] INFO  testBase.BaseClass - ********** Username is entered **********
+16:54:36.326 [main] INFO  testBase.BaseClass - ********** Clicked on Singup button **********
+16:54:36.366 [main] INFO  testBase.BaseClass - ********** Verify Enter Account information text is visible? **********
+16:54:36.366 [main] INFO  testBase.BaseClass - ********** Enter Account Information text message is visible **********
+16:54:37.517 [main] INFO  testBase.BaseClass - ********** Given details such as 'Title', 'Name', 'Email', 'Password', 'DateOfBirth' is filled up **********
+16:54:37.654 [main] INFO  testBase.BaseClass - ********** Clicked on singup for our newsletter checkbox **********
+16:54:37.779 [main] INFO  testBase.BaseClass - ********** Clicked on receive special offers checkbox **********
+16:54:39.345 [main] INFO  testBase.BaseClass - ********** Given details are filled up successfully, First name, Last name, Company, Address, Address2, Country, State, City, Zipcode, Mobile Number **********
+16:54:40.378 [main] INFO  testBase.BaseClass - ********** Clicked on create account button **********
+16:54:40.412 [main] INFO  testBase.BaseClass - ********** Verify account created text message is visible**********
+16:54:40.412 [main] INFO  testBase.BaseClass - ********** Account is successfully created **********
+16:54:47.391 [main] INFO  testBase.BaseClass - ********** Clicked on continue button **********
+16:54:47.422 [main] INFO  testBase.BaseClass - ********** Verify that logged in as username is visible **********
+16:54:47.422 [main] INFO  testBase.BaseClass - ********** User get logged in successfullly and username is visible **********
