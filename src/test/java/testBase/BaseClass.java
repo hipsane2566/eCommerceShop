@@ -7,12 +7,10 @@ import java.util.Properties;
 
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
-import org.openqa.selenium.Platform;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.edge.EdgeDriver;
-import org.openqa.selenium.remote.DesiredCapabilities;
 import org.testng.annotations.*;
 
 public class BaseClass {
@@ -58,14 +56,14 @@ public class BaseClass {
 		return driver;
 	}
 	
-	@BeforeClass
+	@BeforeClass(groups="Regression")
 	public static void setup() throws IOException {
 		driver = intitializeBrowser();
 		driver.manage().deleteAllCookies();
 		driver.manage().window().maximize();
 	}
 	
-	@AfterClass
+	@AfterClass(groups = "Regression")
 	public static void teardown() {
 		driver = getDriver();
 		driver.quit();

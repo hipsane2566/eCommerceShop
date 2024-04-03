@@ -5,17 +5,25 @@ import org.testng.annotations.Test;
 
 import pageObjects.Registration;
 import testBase.BaseClass;
-import utilities.PopupHandle;
+// import utilities.PopupHandle;
+import utilities.DataProviders;
 
-public class AccountRegistration extends BaseClass {
+public class AccountCreationTest extends BaseClass {
 	Registration register;
+	// final static String password = CustomUtility.randomAlphanumeric();
+	// final static String emailId = "Hitesh2024@gmail.com";
+	// final static String username = "Hitesh";
 
-	@Test(description = "Register User")
-	public void testCase01() throws InterruptedException {
+	@Test(dataProvider = "AccountCreationData", dataProviderClass = DataProviders.class ,description = "Register User", groups="Regression")
+	// dataProvider = "RegisterationData", dataProviderClass = RegisterDataProvider.class
+	public void testCase01(String username, String emailId, String password, String title, String name,
+			String password1,String day, String month, String year, String firstName, String lastName,
+			String comp, String add, String add2, String country, String state, String city, String zipcode,
+			String mobno) throws InterruptedException {
+		// String username, String emailId, String password
 		boolean status;
-		String username = "Hitesh";
 		register = new Registration(getDriver());
-		PopupHandle popup = register.displaypop();
+		// PopupHandle popup = register.displaypop();
 
 		// Verify that home page is visible successfully
 		log().info("********** Test Case 01 is Started **********");
@@ -45,7 +53,7 @@ public class AccountRegistration extends BaseClass {
 		}
 
 		// Enter name and email address
-		register.enterUsername(username, "Hitesh2024@gmail.com");
+		register.enterUsername(username, emailId);
 		log().info("********** Username is entered **********");
 
 		// Click 'Signup' button
@@ -64,7 +72,7 @@ public class AccountRegistration extends BaseClass {
 		}
 
 		// Fill details: Title, Name, Email, Password, Date of birth
-		register.enterDetails("Mr", "Hitesh", "Pass@123", "15", "10", "1996");
+		register.enterDetails(title, name, password1, day, month, year);
 		log().info("********** Given details such as 'Title', 'Name', 'Email', 'Password', 'DateOfBirth' is filled up **********");
 		// log().error("********** Failed to fill up details **********");
 
@@ -78,8 +86,8 @@ public class AccountRegistration extends BaseClass {
 
 		// Fill details: First name, Last name, Company, Address, Address2, Country,
 		// State, City, Zipcode, Mobile Number
-		register.fillAddressInfo(username, "Patiyal", "abc pvt ltd", "add 123 qwerty", "zxcv 4321 ghj, test", "India",
-				"Pujab", "Mohali", "963258", "9632587410");
+		register.fillAddressInfo(firstName, lastName, comp, add, add2, country,
+				state, city, zipcode, mobno);
 		log().info("********** Given details are filled up successfully, First name, Last name, Company, Address, Address2, Country, State, City, Zipcode, Mobile Number **********");
 			
 		// Click 'Create Account button'
@@ -134,8 +142,4 @@ public class AccountRegistration extends BaseClass {
 		log().info("********** Clicked on continue button **********");
 	}
 
-	@Test(description = "Register User with existing email")
-	public void testCase02() {
-		register = new Registration(getDriver());
 	}
-}

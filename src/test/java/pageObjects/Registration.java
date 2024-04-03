@@ -1,5 +1,6 @@
 package pageObjects;
 
+import java.time.Duration;
 import java.util.List;
 
 import org.openqa.selenium.WebDriver;
@@ -86,6 +87,8 @@ public class Registration extends BasePage {
 			if (actualPageTitle.equals("Automation Exercise")) {
 				status = true;
 			}
+//			driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
+//			singupEmailInput.isDisplayed();
 		} catch (Exception e) {
 			e.printStackTrace();
 			System.out.println("Home Page is not visible, as page is not a homepage");

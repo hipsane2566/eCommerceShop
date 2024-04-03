@@ -2,10 +2,8 @@ package utilities;
 
 import java.time.Duration;
 
-import org.openqa.selenium.By;
+import org.apache.commons.lang3.RandomStringUtils;
 import org.openqa.selenium.JavascriptExecutor;
-import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.WebDriverException;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.Select;
@@ -82,6 +80,12 @@ public class CustomUtility extends BaseClass{
 		JavascriptExecutor js = (JavascriptExecutor) getDriver();
 		js.executeScript("arguments[0].scrollIntoView(true);", elem);
 		elem.click();
+	}
+
+	public static String randomAlphanumeric(){
+		String aplhabet = RandomStringUtils.randomAlphabetic(8);
+		String numeric = RandomStringUtils.randomAlphanumeric(6);
+		return aplhabet + "@" + numeric;
 	}
 
 }
