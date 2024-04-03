@@ -2,20 +2,20 @@
 <testng-results ignored="0" total="2" passed="2" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-04-03T12:12:26 IST" name="Functional Test" finished-at="2024-04-03T12:13:17 IST" duration-ms="50709">
+  <suite started-at="2024-04-03T18:08:57 IST" name="Functional Test" finished-at="2024-04-03T18:09:49 IST" duration-ms="51421">
     <groups>
       <group name="Regression">
-        <method signature="AccountCreationTest.testCase01(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:testCases.AccountCreationTest@41d477ed]" name="testCase01" class="testCases.AccountCreationTest"/>
-        <method signature="LoginTest.testCase02(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:testCases.LoginTest@74235045]" name="testCase02" class="testCases.LoginTest"/>
+        <method signature="AccountCreationTest.testCase01(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:testCases.AccountCreationTest@397fbdb]" name="testCase01" class="testCases.AccountCreationTest"/>
+        <method signature="LoginTest.testCase02(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:testCases.LoginTest@2d3379b4]" name="testCase02" class="testCases.LoginTest"/>
       </group> <!-- Regression -->
     </groups>
-    <test started-at="2024-04-03T12:12:26 IST" name="Regression Test" finished-at="2024-04-03T12:13:17 IST" duration-ms="50709">
+    <test started-at="2024-04-03T18:08:57 IST" name="Regression Test" finished-at="2024-04-03T18:09:49 IST" duration-ms="51421">
       <class name="testCases.AccountCreationTest">
-        <test-method is-config="true" signature="setup()[pri:0, instance:testCases.AccountCreationTest@41d477ed]" started-at="2024-04-03T12:12:26 IST" name="setup" finished-at="2024-04-03T12:12:32 IST" duration-ms="6386" status="PASS">
+        <test-method is-config="true" signature="setup()[pri:0, instance:testCases.AccountCreationTest@397fbdb]" started-at="2024-04-03T18:08:58 IST" name="setup" finished-at="2024-04-03T18:09:06 IST" duration-ms="8746" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="testCase01(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:testCases.AccountCreationTest@41d477ed]" started-at="2024-04-03T12:12:37 IST" name="testCase01" description="Register User" data-provider="AccountCreationData" finished-at="2024-04-03T12:13:06 IST" duration-ms="29241" status="PASS">
+        <test-method signature="testCase01(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:testCases.AccountCreationTest@397fbdb]" started-at="2024-04-03T18:09:17 IST" name="testCase01" description="Register User" data-provider="AccountCreationData" finished-at="2024-04-03T18:09:30 IST" duration-ms="12806" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -116,17 +116,17 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testCase01 -->
-        <test-method is-config="true" signature="teardown()[pri:0, instance:testCases.AccountCreationTest@41d477ed]" started-at="2024-04-03T12:13:06 IST" name="teardown" finished-at="2024-04-03T12:13:06 IST" duration-ms="186" status="PASS">
+        <test-method is-config="true" signature="teardown()[pri:0, instance:testCases.AccountCreationTest@397fbdb]" started-at="2024-04-03T18:09:30 IST" name="teardown" finished-at="2024-04-03T18:09:30 IST" duration-ms="290" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- teardown -->
       </class> <!-- testCases.AccountCreationTest -->
       <class name="testCases.LoginTest">
-        <test-method is-config="true" signature="setup()[pri:0, instance:testCases.LoginTest@74235045]" started-at="2024-04-03T12:13:06 IST" name="setup" finished-at="2024-04-03T12:13:12 IST" duration-ms="5613" status="PASS">
+        <test-method is-config="true" signature="setup()[pri:0, instance:testCases.LoginTest@2d3379b4]" started-at="2024-04-03T18:09:30 IST" name="setup" finished-at="2024-04-03T18:09:41 IST" duration-ms="11069" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="testCase02(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:testCases.LoginTest@74235045]" started-at="2024-04-03T12:13:12 IST" name="testCase02" description="Register User with existing email" data-provider="LoginTestData" finished-at="2024-04-03T12:13:17 IST" duration-ms="4592" status="PASS">
+        <test-method signature="testCase02(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:testCases.LoginTest@2d3379b4]" started-at="2024-04-03T18:09:41 IST" name="testCase02" description="Register User with existing email" data-provider="LoginTestData" finished-at="2024-04-03T18:09:49 IST" duration-ms="7450" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -147,7 +147,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testCase02 -->
-        <test-method is-config="true" signature="teardown()[pri:0, instance:testCases.LoginTest@74235045]" started-at="2024-04-03T12:13:17 IST" name="teardown" finished-at="2024-04-03T12:13:17 IST" duration-ms="158" status="PASS">
+        <test-method is-config="true" signature="teardown()[pri:0, instance:testCases.LoginTest@2d3379b4]" started-at="2024-04-03T18:09:49 IST" name="teardown" finished-at="2024-04-03T18:09:49 IST" duration-ms="290" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- teardown -->

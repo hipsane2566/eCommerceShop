@@ -1,33 +1,14 @@
-12:12:37.632 [main] INFO  testBase.BaseClass - ********** Home page is visible **********
-12:12:38.668 [main] INFO  testBase.BaseClass - ********** Clicked on Singup / Login button **********
-12:12:38.706 [main] INFO  testBase.BaseClass - ********** Verify New User Signup! text is visible? **********
-12:12:38.706 [main] INFO  testBase.BaseClass - ********** New user singup text message is visible **********
-12:12:38.868 [main] INFO  testBase.BaseClass - ********** Username is entered **********
-12:12:39.943 [main] INFO  testBase.BaseClass - ********** Clicked on Singup button **********
-12:12:39.979 [main] INFO  testBase.BaseClass - ********** Verify Enter Account information text is visible? **********
-12:12:39.979 [main] INFO  testBase.BaseClass - ********** Enter Account Information text message is visible **********
-12:12:40.633 [main] INFO  testBase.BaseClass - ********** Given details such as 'Title', 'Name', 'Email', 'Password', 'DateOfBirth' is filled up **********
-12:12:40.741 [main] INFO  testBase.BaseClass - ********** Clicked on singup for our newsletter checkbox **********
-12:12:40.828 [main] INFO  testBase.BaseClass - ********** Clicked on receive special offers checkbox **********
-12:12:41.834 [main] INFO  testBase.BaseClass - ********** Given details are filled up successfully, First name, Last name, Company, Address, Address2, Country, State, City, Zipcode, Mobile Number **********
-12:12:42.580 [main] INFO  testBase.BaseClass - ********** Clicked on create account button **********
-12:12:42.610 [main] INFO  testBase.BaseClass - ********** Verify account created text message is visible**********
-12:12:42.612 [main] INFO  testBase.BaseClass - ********** Account is successfully created **********
-12:12:56.610 [main] INFO  testBase.BaseClass - ********** Clicked on continue button **********
-12:12:56.633 [main] INFO  testBase.BaseClass - ********** Verify that logged in as username is visible **********
-12:12:56.634 [main] INFO  testBase.BaseClass - ********** User get logged in successfullly and username is visible **********
-12:12:57.755 [main] INFO  testBase.BaseClass - ********** Clicked on delete account button **********
-12:12:57.782 [main] INFO  testBase.BaseClass - ********** Verify that account deleted test message is visible **********
-12:12:57.782 [main] INFO  testBase.BaseClass - ********** Account is successfully deleted **********
-12:13:06.688 [main] INFO  testBase.BaseClass - ********** Clicked on continue button **********
-12:13:12.524 [main] INFO  testBase.BaseClass - ********** Test Case 01 is Started **********
-12:13:12.524 [main] INFO  testBase.BaseClass - ********** Verify that home page is visible successfully? **********
-12:13:12.532 [main] INFO  testBase.BaseClass - ********** Home page is visible **********
-12:13:13.709 [main] INFO  testBase.BaseClass - ********** Clicked on Singup / Login button **********
-12:13:13.709 [main] INFO  testBase.BaseClass - ********** Verify 'Login to your account' is visible **********
-12:13:13.747 [main] INFO  testBase.BaseClass - ********** Login to your account is visible successfully **********
-12:13:13.847 [main] INFO  testBase.BaseClass - ********** Enter email address **********
-12:13:13.916 [main] INFO  testBase.BaseClass - ********** Enter password **********
-12:13:17.033 [main] INFO  testBase.BaseClass - ********** Click on Login button *********
-12:13:17.033 [main] INFO  testBase.BaseClass - ********** Verify that 'Logged in as username' is visible **********
-12:13:17.113 [main] INFO  testBase.BaseClass - ********** 'Logged in as username' is not visible **********
+18:09:27.898 [main] INFO  testBase.BaseClass - ********** Verify that account deleted test message is visible **********
+18:09:27.907 [main] INFO  testBase.BaseClass - ********** Account is successfully deleted **********
+18:09:30.143 [main] INFO  testBase.BaseClass - ********** Clicked on continue button **********
+18:09:41.618 [main] INFO  testBase.BaseClass - ********** Test Case 01 is Started **********
+18:09:41.618 [main] INFO  testBase.BaseClass - ********** Verify that home page is visible successfully? **********
+18:09:41.638 [main] INFO  testBase.BaseClass - ********** Home page is visible **********
+18:09:42.798 [main] INFO  testBase.BaseClass - ********** Clicked on Singup / Login button **********
+18:09:42.798 [main] INFO  testBase.BaseClass - ********** Verify 'Login to your account' is visible **********
+18:09:42.834 [main] INFO  testBase.BaseClass - ********** Login to your account is visible successfully **********
+18:09:42.960 [main] INFO  testBase.BaseClass - ********** Enter email address **********
+18:09:43.041 [main] INFO  testBase.BaseClass - ********** Enter password **********
+18:09:48.948 [main] INFO  testBase.BaseClass - ********** Click on Login button *********
+18:09:48.948 [main] INFO  testBase.BaseClass - ********** Verify that 'Logged in as username' is visible **********
+18:09:49.064 [main] INFO  testBase.BaseClass - ********** 'Logged in as username' is not visible **********
