@@ -2,20 +2,42 @@
 <testng-results ignored="0" total="2" passed="2" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-04-03T18:08:57 IST" name="Functional Test" finished-at="2024-04-03T18:09:49 IST" duration-ms="51421">
+  <suite started-at="2024-04-04T17:55:16 IST" name="Functional Test" finished-at="2024-04-04T17:56:11 IST" duration-ms="55204">
     <groups>
       <group name="Regression">
-        <method signature="AccountCreationTest.testCase01(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:testCases.AccountCreationTest@397fbdb]" name="testCase01" class="testCases.AccountCreationTest"/>
-        <method signature="LoginTest.testCase02(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:testCases.LoginTest@2d3379b4]" name="testCase02" class="testCases.LoginTest"/>
+        <method signature="AccountCreationTest.testCase01(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:testCases.AccountCreationTest@3754a4bf]" name="testCase01" class="testCases.AccountCreationTest"/>
+        <method signature="LoginTest.testCase02(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:testCases.LoginTest@75d4a5c2]" name="testCase02" class="testCases.LoginTest"/>
       </group> <!-- Regression -->
     </groups>
-    <test started-at="2024-04-03T18:08:57 IST" name="Regression Test" finished-at="2024-04-03T18:09:49 IST" duration-ms="51421">
+    <test started-at="2024-04-04T17:55:16 IST" name="Regression Test" finished-at="2024-04-04T17:56:11 IST" duration-ms="55204">
       <class name="testCases.AccountCreationTest">
-        <test-method is-config="true" signature="setup()[pri:0, instance:testCases.AccountCreationTest@397fbdb]" started-at="2024-04-03T18:08:58 IST" name="setup" finished-at="2024-04-03T18:09:06 IST" duration-ms="8746" status="PASS">
+        <test-method is-config="true" signature="intialiseExtentReports()[pri:0, instance:testCases.AccountCreationTest@3754a4bf]" started-at="2024-04-04T17:55:15 IST" name="intialiseExtentReports" finished-at="2024-04-04T17:55:16 IST" duration-ms="329" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- intialiseExtentReports -->
+        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:testCases.AccountCreationTest@3754a4bf]" started-at="2024-04-04T17:55:16 IST" name="setup" finished-at="2024-04-04T17:55:26 IST" duration-ms="10067" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Chrome]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="testCase01(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:testCases.AccountCreationTest@397fbdb]" started-at="2024-04-03T18:09:17 IST" name="testCase01" description="Register User" data-provider="AccountCreationData" finished-at="2024-04-03T18:09:30 IST" duration-ms="12806" status="PASS">
+        <test-method is-config="true" signature="getLog(org.testng.ITestContext)[pri:0, instance:testCases.AccountCreationTest@3754a4bf]" started-at="2024-04-04T17:55:41 IST" name="getLog" finished-at="2024-04-04T17:55:41 IST" duration-ms="23" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.TestRunner@48632f69]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getLog -->
+        <test-method signature="testCase01(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:testCases.AccountCreationTest@3754a4bf]" started-at="2024-04-04T17:55:41 IST" name="testCase01" description="Register User" data-provider="AccountCreationData" finished-at="2024-04-04T17:55:56 IST" duration-ms="15182" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -116,17 +138,55 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testCase01 -->
-        <test-method is-config="true" signature="teardown()[pri:0, instance:testCases.AccountCreationTest@397fbdb]" started-at="2024-04-03T18:09:30 IST" name="teardown" finished-at="2024-04-03T18:09:30 IST" duration-ms="290" status="PASS">
+        <test-method is-config="true" signature="checkStatus(java.lang.reflect.Method,org.testng.ITestResult)[pri:0, instance:testCases.AccountCreationTest@3754a4bf]" started-at="2024-04-04T17:55:56 IST" name="checkStatus" finished-at="2024-04-04T17:55:56 IST" duration-ms="1" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void testCases.AccountCreationTest.testCase01(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String) throws java.lang.InterruptedException]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[[TestResult name=testCase01 status=SUCCESS method=AccountCreationTest.testCase01(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:testCases.AccountCreationTest@3754a4bf] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkStatus -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:testCases.AccountCreationTest@3754a4bf]" started-at="2024-04-04T17:55:56 IST" name="teardown" finished-at="2024-04-04T17:55:58 IST" duration-ms="1433" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- teardown -->
+        <test-method is-config="true" signature="generateExtentReports()[pri:0, instance:testCases.AccountCreationTest@3754a4bf]" started-at="2024-04-04T17:56:11 IST" name="generateExtentReports" finished-at="2024-04-04T17:56:12 IST" duration-ms="1274" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- generateExtentReports -->
       </class> <!-- testCases.AccountCreationTest -->
       <class name="testCases.LoginTest">
-        <test-method is-config="true" signature="setup()[pri:0, instance:testCases.LoginTest@2d3379b4]" started-at="2024-04-03T18:09:30 IST" name="setup" finished-at="2024-04-03T18:09:41 IST" duration-ms="11069" status="PASS">
+        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:testCases.LoginTest@75d4a5c2]" started-at="2024-04-04T17:55:58 IST" name="setup" finished-at="2024-04-04T17:56:05 IST" duration-ms="7191" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Chrome]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="testCase02(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:testCases.LoginTest@2d3379b4]" started-at="2024-04-03T18:09:41 IST" name="testCase02" description="Register User with existing email" data-provider="LoginTestData" finished-at="2024-04-03T18:09:49 IST" duration-ms="7450" status="PASS">
+        <test-method is-config="true" signature="getLog(org.testng.ITestContext)[pri:0, instance:testCases.LoginTest@75d4a5c2]" started-at="2024-04-04T17:56:05 IST" name="getLog" finished-at="2024-04-04T17:56:05 IST" duration-ms="1" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.TestRunner@48632f69]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getLog -->
+        <test-method signature="testCase02(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:testCases.LoginTest@75d4a5c2]" started-at="2024-04-04T17:56:05 IST" name="testCase02" description="Register User with existing email" data-provider="LoginTestData" finished-at="2024-04-04T17:56:10 IST" duration-ms="5515" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -147,7 +207,23 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testCase02 -->
-        <test-method is-config="true" signature="teardown()[pri:0, instance:testCases.LoginTest@2d3379b4]" started-at="2024-04-03T18:09:49 IST" name="teardown" finished-at="2024-04-03T18:09:49 IST" duration-ms="290" status="PASS">
+        <test-method is-config="true" signature="checkStatus(java.lang.reflect.Method,org.testng.ITestResult)[pri:0, instance:testCases.LoginTest@75d4a5c2]" started-at="2024-04-04T17:56:10 IST" name="checkStatus" finished-at="2024-04-04T17:56:10 IST" duration-ms="0" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void testCases.LoginTest.testCase02(java.lang.String,java.lang.String,java.lang.String)]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[[TestResult name=testCase02 status=SUCCESS method=LoginTest.testCase02(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:testCases.LoginTest@75d4a5c2] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkStatus -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:testCases.LoginTest@75d4a5c2]" started-at="2024-04-04T17:56:10 IST" name="teardown" finished-at="2024-04-04T17:56:11 IST" duration-ms="511" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- teardown -->
