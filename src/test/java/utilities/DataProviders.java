@@ -1,13 +1,8 @@
 package utilities;
 
 import java.io.IOException;
-import java.util.Arrays;
-import java.util.List;
-import java.util.stream.Stream;
 
 import org.testng.annotations.DataProvider;
-
-import com.google.common.collect.Lists;
 
 public class DataProviders {
     static String file =   ".\\testData\\Data.xlsx";
