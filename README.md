@@ -1,6 +1,16 @@
+### **Selenium-Java-Framework**
+Pre-requisite: Eclipse, Java
+Added all Browsers Webdriver maven repository
+Added custom xpath to find the locator
+Automated Login flow and added all posible use cases
+Added TestNG Notations
+Added Parallel Test Execution
+Added Log4j configurations
+
 ### **E-commerce Shopping Website**
 Welcome to Automation of E-commerce Shopping Website! This repository contains the code for an online store where customers can browse and purchase products conveniently.
-
+### Framework
+* 
 ### Features
 * User Authentication: Customers can sign up, sign in, and manage their accounts securely.
 * Product Catalog: Browse through our wide range of products sorted by categories.
@@ -13,3 +23,4 @@ Welcome to Automation of E-commerce Shopping Website! This repository contains t
 * Responsive Design: The website is optimized for various devices including desktops, tablets, and mobile phones.
 
 Chromeoption Adblocker extension is a feature added to get rid of unexpected advertisement frames/popup/alerts 
+
