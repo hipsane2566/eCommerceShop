@@ -9,13 +9,13 @@ public class DataProviders {
 	static XLUtil utils = new XLUtil(file);
 
 	public Object[][] getNewUserSignupData() throws IOException {
-		int totalRows = utils.getRowCount("Sheet1");
-		int totalCols = utils.getCellCount("Sheet1", 1);
+		int totalRows = utils.getRowCount("TC002");
+		int totalCols = utils.getCellCount("TC002", 1);
 
 		String userdata[][] = new String[totalRows - 1][totalCols - 1];
 		for (int i = 1; i < totalRows; i++) {
 			for (int j = 1; j < totalCols; j++) {
-				userdata[i - 1][j - 1] = utils.getCellData("Sheet1", i, j);
+				userdata[i - 1][j - 1] = utils.getCellData("TC002", i, j);
 			}
 		}
 		return userdata;
@@ -59,15 +59,30 @@ public class DataProviders {
 	@DataProvider(name = "LoginTestData")
 	public Object[][] getLoginData() throws IOException {
 
-		int totalRows = utils.getRowCount("Sheet1");
-		int totalCols = utils.getCellCount("Sheet1", 1);
+		int totalRows = utils.getRowCount("TC002");
+		int totalCols = utils.getCellCount("TC002", 1);
 
 		String Data[][] = new String[totalRows - 1][totalCols - 1];
 		for (int i = 2; i <= totalRows; i++) {
 			for (int j = 1; j < totalCols; j++) {
-				Data[i - 1 - 1][j - 1] = utils.getCellData("Sheet1", i, j);
+				Data[i - 1 - 1][j - 1] = utils.getCellData("TC002", i, j);
 			}
 		}
 		return Data;
+	}
+
+	@DataProvider(name ="InvalidLoginData")
+	public Object[][] getInvalidLoginData() throws IOException{
+
+		int totalRows = utils.getRowCount("TC003");
+		int totalCols = utils.getCellCount("TC003", 1);
+
+		String  data[][] = new String[totalRows][totalCols-2]; //rows 2-1=1, col 5-2=3
+		for (int i = 1; i <=totalRows; i++) {
+			for (int j = 2; j < totalCols; j++) {
+				data[i - 1][j - 2] = utils.getCellData("TC003", i, j);
+			}
+		}
+		return data;
 	}
 }

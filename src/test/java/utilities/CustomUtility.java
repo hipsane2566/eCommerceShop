@@ -16,7 +16,7 @@ public class CustomUtility extends BaseClass{
 	public static WebDriverWait waitForDuration(){
 		return new WebDriverWait(driver, Duration.ofSeconds(10));
 	}
-	public void visibilityOfElement(WebElement elem) {
+	public static void visibilityOfElement(WebElement elem) {
 		waitForDuration().until(ExpectedConditions.visibilityOf(elem));
 	}
 

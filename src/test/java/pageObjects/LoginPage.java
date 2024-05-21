@@ -6,6 +6,8 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 
+import utilities.CustomUtility;
+
 public class LoginPage extends BasePage{
 	// public static WebDriver driver;
 	public LoginPage(WebDriver driver){
@@ -30,6 +32,8 @@ public class LoginPage extends BasePage{
 	private WebElement accDeletedMsg;
 	@FindBy(linkText = "Continue")
 	private WebElement continueBtn2;
+	@FindBy(css ="p[style='color: red;']")
+	private WebElement errorMessage;
 
 	public boolean verifyLoginToYourAccount(){
 		try{
@@ -58,8 +62,9 @@ public class LoginPage extends BasePage{
 
 	public boolean verifyLoggedIn(String username){
 		try{
-			String expectedResult = LoggedInMsg.getText().trim() + " " + username;
-			String actualResult = LoggedInMsg.getText().trim() + user_name.getText();
+			String expectedResult = username;
+			CustomUtility.visibilityOfElement(LoggedInMsg);
+			String actualResult = user_name.getText();
 			if(actualResult.equals(expectedResult)){
 				return true;
 			}else{
@@ -89,6 +94,11 @@ public class LoginPage extends BasePage{
 
 	public void clickOnContinueBtn2(){
 		continueBtn2.click();
+	}
+
+	//Error message for invalid email and password"
+	public boolean getErrorMessage(String expectedmessage){
+		return errorMessage.getText().equals(expectedmessage);
 	}
 }
 

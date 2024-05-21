@@ -81,7 +81,7 @@ public class BaseClass implements ITestListener{
 	
 	
 	
-	@BeforeSuite()
+	@BeforeSuite(groups="Regression")
 	public void intialiseExtentReports() {
 		sparkReport = new ExtentSparkReporter("AllTest.html");
 		extentReports = new ExtentReports();
@@ -91,7 +91,7 @@ public class BaseClass implements ITestListener{
 		extentReports.setSystemInfo("Java Version", System.getProperty("java.version"));
 	}
 	
-	@AfterSuite()
+	@AfterSuite(groups="Regression")
 	public void generateExtentReports() throws Exception {
 		extentReports.flush();
 		try {
@@ -115,7 +115,7 @@ public class BaseClass implements ITestListener{
 		driver.quit();
 	}
 	
-	@BeforeMethod()
+	@BeforeMethod(groups="Regression")
 	public void getLog(ITestContext context){
 		Capabilities capabilities = ((RemoteWebDriver) driver).getCapabilities();
 		String device = capabilities.getBrowserName()+" "+capabilities.getBrowserVersion().substring(0, capabilities.getBrowserVersion().indexOf("."));
@@ -126,7 +126,7 @@ public class BaseClass implements ITestListener{
 		extentTest.assignDevice(device);
 	}
 	
-	@AfterMethod()
+	@AfterMethod(groups="Regression")
 	public void checkStatus(Method m, ITestResult result) throws IOException {
 		if(result.getStatus() == ITestResult.FAILURE) {
 			String screenshotPath = null;

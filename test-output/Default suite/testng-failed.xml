@@ -3,14 +3,17 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="testCases.AccountRegistration">
+      <class name="testCases.AccountCreationTest">
         <methods>
           <include name="teardown"/>
-          <include name="testCase02"/>
+          <include name="generateExtentReports"/>
+          <include name="checkStatus"/>
           <include name="testCase01"/>
+          <include name="getLog"/>
           <include name="setup"/>
+          <include name="intialiseExtentReports"/>
         </methods>
-      </class> <!-- testCases.AccountRegistration -->
+      </class> <!-- testCases.AccountCreationTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

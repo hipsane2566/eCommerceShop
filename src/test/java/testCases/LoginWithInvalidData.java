@@ -3,24 +3,22 @@ package testCases;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
-
+import testBase.BaseClass;
 import pageObjects.LoginPage;
 import pageObjects.Registration;
-import testBase.BaseClass;
 import utilities.DataProviders;
 
-
-public class LoginTest extends BaseClass{
-    Registration register;
+public class LoginWithInvalidData extends BaseClass{
+	Registration register;
     LoginPage lp;
-    @Test(dataProvider = "LoginTestData", dataProviderClass = DataProviders.class,description = "Register User with existing email", groups ="Regression")
-	public void testCase02(String username, String emailId, String password) {
+	@Test(dataProvider = "InvalidLoginData",dataProviderClass = DataProviders.class, description="Login User with incorrect email and password",groups ="Regression")
+	public void testCase03(String emailId, String password, String expectedMessage){
 		register = new Registration(getDriver());
 		lp = new LoginPage(getDriver());
 		Boolean status; 
 		
 		// Verify that home page is visible successfully
-		extentTest.info("********** Test Case 02 is Started **********");
+		extentTest.info("********** Test Case 03 is Started **********");
 		extentTest.info("********** Verify that home page is visible successfully? **********");
 		status = register.verifyHomepageTitle();
 		if (status) {
@@ -28,7 +26,7 @@ public class LoginTest extends BaseClass{
 			extentTest.pass("********** Home page is visible **********");
 		} else {
 			Assert.assertFalse(status, "Home page is not visible");
-			Assert.assertFalse(status, "Test case 021 is failed");
+			Assert.assertFalse(status, "Test case 03 is failed");
 			extentTest.fail("********** Home page is not visible **********");
 		}
 
@@ -44,32 +42,30 @@ public class LoginTest extends BaseClass{
 			extentTest.pass("********** Login to your account is visible successfully **********");
 		} else {
 			Assert.assertTrue(status, "********** Login to your account is not visible **********");
-			Assert.assertFalse(status, "Test case 02 is failed");
+			Assert.assertFalse(status, "Test case 03 is failed");
 			extentTest.fail("********** Login to your account is not visible **********");
 		}
 
 		//  Enter correct email address and password
-		lp.enterEmailAddress(emailId);
+		lp.enterEmailAddress("Raj@gmail.com");
 		extentTest.info("********** Enter email address **********");
-		lp.enterPassword(password);
+		lp.enterPassword("Password@123");
 		extentTest.info("********** Enter password **********");
 
 		// click on login button
 		lp.clickOnLoginBtn();
 		extentTest.info("********** Click on Login button *********");
 
-		// Verify that 'Logged in as username' is visible
-		extentTest.info("********** Verify that 'Logged in as username' is visible **********");
-		status = lp.verifyLoggedIn(username);
-		if (status) {
-			Assert.assertTrue(status, "********** 'Logged in as username' is visible **********");
-			extentTest.pass("********** 'Logged in as username' is visible **********");
-		}else {
-			Assert.assertFalse(status, "********** 'Logged in as username' is not visible **********");
-			Assert.assertFalse(status, "Test case 02 is failed");
-			extentTest.fail("********** 'Logged in as username' is not visible **********");
+		// Verify error 'Your email or password is incorrect!' is visible
+		status = lp.getErrorMessage("Your email or password is incorrect!");
+		if (status){
+			Assert.assertTrue(status, "********** Error Message is visible **********");
+			extentTest.pass("********** Error Message is visible and not allow to login successfully **********");
+		} else {
+			Assert.assertTrue(status, "********** Error Message is not visible **********");
+			Assert.assertFalse(status, "Test case 03 is failed");
+			extentTest.fail("********** User is able to login with invalid user details **********");
 		}
 
 	}
-
 }
